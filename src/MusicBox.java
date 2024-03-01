@@ -6,9 +6,7 @@ public class MusicBox {
     private char isSongPremium;
     public String songTitle;
     private String songArtists;
-    private String songAlbum;
     public String songGenre;
-    private String songProducer;
     public String songMusicLabel;
     public int noAds;
 
@@ -16,7 +14,10 @@ public class MusicBox {
     public MusicBox(String songID, char premiumSong, String title, String artists, String Album, String genre, String producer, String label) {
         this.songID = songID;
         this.isSongPremium = premiumSong;
+        this.songTitle = title;
         this.songArtists = artists;
+        this. songGenre= genre;
+        this.songMusicLabel = label;
         
         // -- TODO
         /* Initialise  the rest of the variables in this Constructor block*/
